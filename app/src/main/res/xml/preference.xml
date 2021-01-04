@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <SwitchPreference
+                app:defaultValue="false"
+                app:key="@string/pref_key_night"
+                app:summary="@string/mode_deskripsi"
+                app:title="@string/mode"
+                app:iconSpaceReserved="false"/>
+        <ListPreference
+                app:defaultValue="@string/key_indonesia"
+                app:title="@string/bahasa"
+                app:summary="@string/bahasa_deskripsi"
+                app:entries="@array/language_option_labels"
+                app:entryValues="@array/language_option_values"
+                app:key="@string/key_language"
+                app:iconSpaceReserved="false"
+                app:allowDividerBelow="true"
+                app:allowDividerAbove="true"/>
+<!--        <Preference-->
+<!--                app:title="Tentang"-->
+<!--                app:iconSpaceReserved="false"-->
+<!--                app:allowDividerBelow="true"-->
+<!--                app:allowDividerAbove="true">-->
+<!--                <intent android:action="android.intent.action.VIEW"-->
+<!--                        android:data="http://codepath.com/" />-->
+<!--        </Preference>-->
+</PreferenceScreen>

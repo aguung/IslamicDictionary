@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="language_option_labels">
+        <item>@string/indonesia</item>
+        <item>@string/english</item>
+    </array>
+
+    <array name="language_option_values">
+        <item>@string/key_indonesia</item>
+        <item>@string/key_english</item>
+    </array>
+</resources>

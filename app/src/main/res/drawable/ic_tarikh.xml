@@ -1,0 +1,23 @@
+<vector android:height="64dp" android:viewportHeight="64"
+    android:viewportWidth="64" android:width="64dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#2d75bb" android:pathData="m3,57a4,4 0,0 1,4 -4h48v-50h-46a6,6 0,0 0,-6 6z"/>
+    <path android:fillColor="#fcec97" android:pathData="m15,9h34v18h-34z"/>
+    <path android:fillColor="#fcec97" android:pathData="m7,53h48a0,0 0,0 1,0 0v8a0,0 0,0 1,0 0h-48a4,4 0,0 1,-4 -4,4 4,0 0,1 4,-4z"/>
+    <path android:fillColor="#f1c056" android:pathData="m6,56h6v2h-6z"/>
+    <path android:fillColor="#f1c056" android:pathData="m20,56h35v2h-35z"/>
+    <path android:fillColor="#f1c056" android:pathData="m3,57a4,4 0,0 1,4 -4h2v-50a6,6 0,0 0,-6 6z"/>
+    <path android:fillColor="#f1c056" android:pathData="m28.035,24.263 l1.93,-0.526 -3,-11a1,1 0,0 0,-0.965 -0.737h-4a1,1 0,0 0,-0.965 0.737l-3,11 1.93,0.526 1.162,-4.263h5.746zM21.673,18 L22.764,14h2.472l1.091,4z"/>
+    <path android:fillColor="#2d75bb" android:pathData="m31,17h5v2h-5z"/>
+    <path android:fillColor="#f1c056" android:pathData="m46,24h-8a1,1 0,0 1,-0.819 -1.573l5.899,-8.427h-6.08v-2h8a1,1 0,0 1,0.819 1.573l-5.899,8.427h6.08z"/>
+    <path android:fillColor="#f1c056" android:pathData="m20,31h24v4h-24z"/>
+    <path android:fillColor="#f9bb4b" android:pathData="m17,39h4v2h-4z"/>
+    <path android:fillColor="#f9bb4b" android:pathData="m23,39h18v2h-18z"/>
+    <path android:fillColor="#f9bb4b" android:pathData="m43,39h4v2h-4z"/>
+    <path android:fillColor="#f9bb4b" android:pathData="m15,43h34v2h-34z"/>
+    <path android:fillColor="#f9bb4b" android:pathData="m15,47h34v2h-34z"/>
+    <path android:fillColor="#e4544f" android:pathData="m55,8h6v4h-6z"/>
+    <path android:fillColor="#7fc99d" android:pathData="m55,16h4v4h-4z"/>
+    <path android:fillColor="#e4544f" android:pathData="m55,24h6v4h-6z"/>
+    <path android:fillColor="#7fc99d" android:pathData="m55,32h4v4h-4z"/>
+    <path android:fillColor="#e4544f" android:pathData="m20,59 l-4,-2 -4,2v-6h8z"/>
+</vector>

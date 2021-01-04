@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">Lexipai</string>
+
+    <string name="pref_key_night" translatable="false">key_night_mode</string>
+    <string name="key_language" translatable="false">key_language</string>
+    <string name="key_indonesia" translatable="false">in</string>
+    <string name="key_english" translatable="false">en</string>
+    <string name="copyright" translatable="false">\u00A9 2020 Universsitanya </string>
+
+    <string name="muat_ulang">Muat Ulang</string>
+    <string name="todo">todo</string>
+    <string name="cari_isitilah">Cari Isitilah</string>
+    <string name="arab">Arab</string>
+    <string name="text_arab">Text Arab</string>
+    <string name="pengertian">Pengertian</string>
+    <string name="text_pengertian">Text Pengertian</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_istilah_tidak_ditemukan">Data Istilah Tidak Ditemukan</string>
+    <string name="indonesia">Bahasa Indonesia</string>
+    <string name="english">Inggris</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="mode_deskripsi">Pilih mode terang atau gelap</string>
+    <string name="mode">Mode Malam</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="bahasa_deskripsi">Pilih bahasa yang akan digunakan</string>
+</resources>
