@@ -6,10 +6,6 @@ import androidx.recyclerview.widget.DiffUtil
 import com.devtech.islamicdictionary.data.local.entity.Dictionary
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 
-
-
-
-
 class DictionaryAdapter : PagingDataAdapter<Dictionary, DictionaryViewHolder>(POST_COMPARATOR) {
 
     override fun onBindViewHolder(holder: DictionaryViewHolder, position: Int) {

@@ -15,9 +15,10 @@ import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
 
+
 class DictionaryViewModel @ViewModelInject constructor(
-    private val repository: DictionaryRepository,
-    @Assisted private val savedStateHandle: SavedStateHandle
+        private val repository: DictionaryRepository,
+        @Assisted private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
     companion object {
         const val KEY_SUBREDDIT = "subreddit"
@@ -38,21 +39,23 @@ class DictionaryViewModel @ViewModelInject constructor(
     @ExperimentalCoroutinesApi
     @ExperimentalPagingApi
     val posts = flowOf(
-        clearListCh.receiveAsFlow().map { PagingData.empty() },
-        savedStateHandle.getLiveData<String>(KEY_SUBREDDIT)
-            .asFlow()
-            .combine(savedStateHandle.getLiveData<String>(KEY_TYPE).asFlow()) { search, type ->
-                arrayOf(search, type)
-            }.flatMapLatest { repository.getSearchDictionary(it[1], it[0], 10) }
-            .cachedIn(viewModelScope)
+            clearListCh.receiveAsFlow().map { PagingData.empty() },
+            savedStateHandle.getLiveData<String>(KEY_SUBREDDIT)
+                    .asFlow()
+                    .combine(savedStateHandle.getLiveData<String>(KEY_TYPE).asFlow()) { search, type ->
+                        arrayOf(search, type)
+                    }.flatMapLatest {
+                        repository.getSearchDictionary(it[1], it[0], 10)
+                    }
+                    .cachedIn(viewModelScope)
     ).flattenMerge(2)
 
     fun shouldShowSubreddit(
-        subreddit: String
+            subreddit: String
     ) = savedStateHandle.get<String>(KEY_SUBREDDIT) != subreddit
 
-    fun shouldShowType(
-        type: String
+    private fun shouldShowType(
+            type: String
     ) = savedStateHandle.get<String>(KEY_TYPE) != type
 
     fun showSubreddit(type: String, subreddit: String) {

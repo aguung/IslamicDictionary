@@ -6,7 +6,6 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
-<!--        <item name="android:actionMenuTextColor">@color/textColorPrimary</item>-->
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
         <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
     </style>

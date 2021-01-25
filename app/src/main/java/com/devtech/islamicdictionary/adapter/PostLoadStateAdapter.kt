@@ -1,13 +1,13 @@
-package com.devtech.islamicdictionary.adapter.dictionary
+package com.devtech.islamicdictionary.adapter
 
 import android.view.ViewGroup
 import androidx.paging.LoadState
 import androidx.paging.LoadStateAdapter
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.devtech.islamicdictionary.adapter.NetworkStateItemViewHolder
 
-class PostsLoadStateAdapter(
-    private val adapter: DictionaryAdapter
+class PostsLoadStateAdapter<out T>(
+        private val adapter: T
 ) : LoadStateAdapter<NetworkStateItemViewHolder>() {
     override fun onBindViewHolder(holder: NetworkStateItemViewHolder, loadState: LoadState) {
         holder.bindTo(loadState)
@@ -16,9 +16,9 @@ class PostsLoadStateAdapter(
     }
 
     override fun onCreateViewHolder(
-        parent: ViewGroup,
-        loadState: LoadState
+            parent: ViewGroup,
+            loadState: LoadState
     ): NetworkStateItemViewHolder {
-        return NetworkStateItemViewHolder(parent) { adapter.retry() }
+        return NetworkStateItemViewHolder(parent) { (adapter as PagingDataAdapter<*, *>).retry() }
     }
 }

@@ -12,8 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.*
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadState
-import com.devtech.islamicdictionary.R
-import com.devtech.islamicdictionary.adapter.dictionary.PostsLoadStateAdapter
+import com.devtech.islamicdictionary.adapter.PostsLoadStateAdapter
 import com.devtech.islamicdictionary.adapter.dictionary.DictionaryAdapter
 import com.devtech.islamicdictionary.databinding.DictionaryFragmentBinding
 import com.devtech.islamicdictionary.utils.gone

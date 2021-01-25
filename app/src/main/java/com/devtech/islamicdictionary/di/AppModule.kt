@@ -40,6 +40,5 @@ object AppModule {
 
     @Provides
     fun provideDictionaryDao(db: DictionaryDatabase) = db.dictionaryDao()
-
 }
 

@@ -33,7 +33,6 @@ class PageKeyedRemoteMediator(
             }
             val response = dictionaryApi.getDictionary()
             database.withTransaction {
-//                dictionary.deleteAll()
                 dictionary.insertAll(response.records)
             }
 
