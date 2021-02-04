@@ -9,5 +9,4 @@ data class Menu(
     var gambar: Int,
     var background: Int,
     var posisi: Int,
-    var navigate: Int
 ) : Parcelable

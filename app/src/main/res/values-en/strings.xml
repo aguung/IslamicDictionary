@@ -25,4 +25,9 @@
     <string name="mode">Night Mode</string>
     <string name="bahasa">Language</string>
     <string name="bahasa_deskripsi">Select the language to use</string>
+    <string name="nomor_handphone">Mobile Number Phone</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="coba_lagi">Retry</string>
+    <string name="empty_fields">%1$s must be filled</string>
 </resources>

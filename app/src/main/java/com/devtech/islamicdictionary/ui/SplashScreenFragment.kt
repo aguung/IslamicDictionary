@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.devtech.islamicdictionary.R
 import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.PreferenceManager
 import com.devtech.islamicdictionary.utils.toogleActionbar
 
 
@@ -24,9 +25,23 @@ class SplashScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        iniToolbar()
+        initAction()
+    }
+
+    private fun iniToolbar() {
         (activity as AppCompatActivity).toogleActionbar(show = false, back = false, title = "")
+    }
+
+    private fun initAction() {
         Handler(Looper.getMainLooper()).postDelayed({
-            findNavController().navigate(R.id.action_splashScreenFragment_to_homeFragment)
+            if (PreferenceManager.getDefaultSharedPreferences(requireContext())
+                    .getBoolean(resources.getString(R.string.key_login), false)
+            ) {
+                findNavController().navigate(R.id.action_splashScreenFragment_to_homeFragment)
+            } else {
+                findNavController().navigate(R.id.action_splashScreenFragment_to_loginFragment)
+            }
         }, 3000L)
     }
 }

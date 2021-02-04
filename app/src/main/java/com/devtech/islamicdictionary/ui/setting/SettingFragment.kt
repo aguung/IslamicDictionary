@@ -4,14 +4,12 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.lifecycle.lifecycleScope
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import com.devtech.islamicdictionary.R
 import com.devtech.islamicdictionary.utils.toogleActionbar
-import kotlinx.coroutines.launch
 
 
 class SettingFragment : PreferenceFragmentCompat() {

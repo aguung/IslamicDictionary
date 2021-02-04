@@ -1,10 +1,10 @@
 package com.devtech.islamicdictionary.utils
 
 import android.view.View
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 fun View.snackbar(message:String) = Snackbar.make(this,message,Snackbar.LENGTH_SHORT).show()
 
@@ -30,6 +30,26 @@ fun View.visible() {
 
 fun View.gone() {
     visibility = View.GONE
+}
+
+fun TextInputLayout.inputError(data: String, message: String?): Boolean {
+    return if (data.isEmpty()) {
+        error = message
+        false
+    } else {
+        error = null
+        true
+    }
+}
+
+fun TextInputEditText.clearInput(
+    inputLayout: TextInputLayout
+) {
+    this.setOnFocusChangeListener { _, hasFoccus ->
+        if (hasFoccus) {
+            inputLayout.error = null
+        }
+    }
 }
 
 

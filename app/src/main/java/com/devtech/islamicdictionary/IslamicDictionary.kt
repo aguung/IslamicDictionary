@@ -1,16 +1,12 @@
 package com.devtech.islamicdictionary
 
 import android.app.Application
-import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.preference.PreferenceManager
 import com.devtech.islamicdictionary.utils.CrashReportingTree
 import com.google.firebase.analytics.FirebaseAnalytics
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
-import android.content.ContextWrapper
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.preference.PreferenceManager
-import com.devtech.islamicdictionary.utils.updateLocale
-import java.util.*
 
 
 @HiltAndroidApp

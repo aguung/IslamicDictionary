@@ -31,12 +31,10 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:scrollbars="none"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/input"
         app:layout_constraintStart_toStartOf="@+id/input"
         app:layout_constraintTop_toBottomOf="@+id/input">
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
             android:layout_width="match_parent"
@@ -46,17 +44,31 @@
             tools:listitem="@layout/item_rv_dictionary" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <TextView
-            android:id="@+id/txtNotFound"
+    <LinearLayout
+        android:id="@+id/lytEmpty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/input">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/data_istilah_tidak_ditemukan"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:drawablePadding="16dp"
-            app:drawableTopCompat="@drawable/ic_notfound"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coba_lagi" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

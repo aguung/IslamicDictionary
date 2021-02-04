@@ -5,6 +5,7 @@
     <string name="key_language" translatable="false">key_language</string>
     <string name="key_indonesia" translatable="false">in</string>
     <string name="key_english" translatable="false">en</string>
+    <string name="key_login" translatable="false">login</string>
     <string name="copyright" translatable="false">\u00A9 2020 Universsitanya </string>
 
     <string name="muat_ulang">Muat Ulang</string>
@@ -24,4 +25,9 @@
     <string name="mode">Mode Malam</string>
     <string name="bahasa">Bahasa</string>
     <string name="bahasa_deskripsi">Pilih bahasa yang akan digunakan</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="coba_lagi">Coba Lagi</string>
+    <string name="empty_fields">%1$s harus diisi</string>
 </resources>

@@ -15,19 +15,19 @@ class DictionaryRepository @Inject constructor(
 ) {
 
     @ExperimentalPagingApi
-    fun getSearchDictionary(type: String, key: String, pageSize: Int) = Pager(
+    fun getSearchDictionary(type: String, search: String, pageSize: Int) = Pager(
         config = PagingConfig(pageSize),
         remoteMediator = PageKeyedRemoteMediator(dictionaryApi, db)
     ) {
         if(type != "0"){
-            if (key.isNotEmpty()) {
-                db.dictionaryDao().getSearchByType(type,"%$key%")
+            if (search.isNotEmpty()) {
+                db.dictionaryDao().getSearchByType(type,"%$search%")
             } else {
                 db.dictionaryDao().getAllPagedByType(type)
             }
         }else{
-            if (key.isNotEmpty()) {
-                db.dictionaryDao().getSearch("%$key%")
+            if (search.isNotEmpty()) {
+                db.dictionaryDao().getSearch("%$search%")
             } else {
                 db.dictionaryDao().getAllPaged()
             }
